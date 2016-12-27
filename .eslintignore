@@ -1,0 +1,4 @@
+bin/server.js
+bin/data/pictures.js
+src/check.js
+src/*.min.js
