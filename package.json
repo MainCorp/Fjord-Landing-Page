@@ -1,0 +1,27 @@
+{
+  "name": "Fjord-Landing-Page",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Вёрстка проекта Fjord Landing Page",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MainCorp/Fjord-Landing-Page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MainCorp/Fjord-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/MainCorp/Fjord-Landing-Page#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.10",
+    "editorconfig-tools": "0.1.1",
+    "gulp": "3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.1"
+  },
+  "scripts": {
+    "test": "editorconfig-tools check *",
+    "start": "gulp serve"
+  }
+}
