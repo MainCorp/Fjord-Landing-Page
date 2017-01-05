@@ -1,0 +1,18 @@
+$montserratLight: 'Montserrat-Light';
+$montserratHairline: 'Montserrat-Hairline';
+$MontserratBlack: 'Montserrat-Black';
+
+@font-face {
+	font-family: $montserratLight;
+	src: url(../fonts/Montserrat-Light.otf);
+}
+
+@font-face {
+	font-family: $montserratHairline;
+	src: url(../fonts/Montserrat-Hairline.ttf);
+}
+
+@font-face {
+	font-family: $MontserratBlack;
+	src: url(../fonts/Montserrat-Black.otf);
+}

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Montserrat-Light";
+  src: url(../fonts/Montserrat-Light.otf); }
+
+@font-face {
+  font-family: "Montserrat-Hairline";
+  src: url(../fonts/Montserrat-Hairline.ttf); }
+
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url(../fonts/Montserrat-Black.otf); }
+
+.page-navigation__item {
+  list-style: none; }
+  .page-navigation__item.page-navigation__item--bg {
+    background-color: rgba(0, 0, 0, 0.3); }
+
+.page-navigation__link {
+  font-family: "Montserrat-Light";
+  font-size: 12px;
+  line-height: 12px;
+  color: #232323;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  opacity: .5;
+  transition: opacity .3s; }
+  .page-navigation__link:hover {
+    opacity: 1; }
