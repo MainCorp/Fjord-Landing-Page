@@ -1,0 +1,7 @@
+.statement__title {
+	@include style-text($montserratHairline, 72px, 72px, #232323);
+}
+
+.statement__desc {
+	@include style-text($montserratLight, 18px, 26px, #232323);
+}

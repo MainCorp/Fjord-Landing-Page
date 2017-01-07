@@ -18,7 +18,8 @@
     "gulp": "3.9.1",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.1.1",
-    "gulp-sass": "^2.3.1"
+    "gulp-sass": "^2.3.2",
+    "gulp-wait": "0.0.2"
   },
   "scripts": {
     "test": "editorconfig-tools check *",

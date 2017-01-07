@@ -1,0 +1,19 @@
+.change__title {
+	@include style-text($montserratHairline, 72px, 72px, #ffffff);
+}
+
+.change__desc {
+	@include style-text($montserratLight, 14px, 22px, #ffffff);
+	opacity: .5;
+}
+
+.change__btn {
+	padding: 21px 45px;
+	border: 0;
+
+	@include style-text($montserratLight, 12px, 12px, #000000);
+	text-transform: uppercase;
+	
+	background-color: #26e6e6;
+	outline: 0;
+}

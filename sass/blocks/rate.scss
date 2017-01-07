@@ -1,0 +1,23 @@
+.rate__title {
+	@include style-text($montserratLight, 12px, 80px, #000000);
+}
+
+.rate__price {
+	@include style-text($MontserratBlack, 50px, 120px, #000000);
+}
+
+.rate__desc {
+	@include style-text($montserratLight, 14px, 22px, #000000);
+	opacity: .5;
+}
+
+.rate__btn {
+	border: 0;
+
+	@include style-text($montserratLight, 12px, 12px, #000000);
+	text-transform: uppercase;
+	text-decoration: none;
+
+	outline: 0;
+	background: none;
+}

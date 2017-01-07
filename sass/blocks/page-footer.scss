@@ -1,0 +1,4 @@
+.page-footer__title {
+	@include style-text($MontserratBlack, 90px, 120px, #000000);
+	text-transform: uppercase;
+}

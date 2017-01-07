@@ -1,0 +1,19 @@
+.rule__title {
+	@include style-text($montserratLight, 16px, 22px, #232323);
+}
+
+.rule__desc {
+	@include style-text($montserratLight, 14px, 22px, #232323);
+	opacity: .5;
+}
+
+.rule__btn {
+	border: 0;
+
+	@include style-text($montserratLight, 12px, 12px, #232323);
+	text-transform: uppercase;
+	text-decoration: none;
+
+	outline: 0;
+	background: none;
+}

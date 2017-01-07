@@ -1,0 +1,9 @@
+.promo__title {
+	max-width: 420px;
+	@include style-text($montserratHairline, 72px, 80px, #000000);
+}
+
+.promo__subtitle {
+	@include style-text($montserratLight, 12px, 12px, #232323);
+	text-transform: uppercase;
+}

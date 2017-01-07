@@ -1,0 +1,25 @@
+.advantages__title {
+	@include style-text($montserratLight, 14px, 22px, #232323);
+	text-transform: uppercase;
+}
+
+.advantages__desc {
+	@include style-text($montserratLight, 14px, 22px, #232323);
+	opacity: .5;
+}
+
+.advantages__news {
+	@include style-text($montserratLight, 10px, 10px, #ffffff);
+	background-color: #26e6e6;
+}
+
+.advantages__link {
+	@include style-text($montserratLight, 12px, 12px, #232323);
+	text-transform: uppercase;
+	text-decoration: none;
+	@include transition(opacity .3s);
+
+	&:hover {
+		opacity: .5;
+	}
+}

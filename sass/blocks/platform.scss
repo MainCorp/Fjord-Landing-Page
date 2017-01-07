@@ -1,0 +1,8 @@
+.platform__title {
+	@include style-text($montserratLight, 12px, 12px, #000000);
+	text-transform: uppercase;
+}
+
+.platform__desc {
+	@include style-text($montserratLight, 18px, 26px, #232323);
+}

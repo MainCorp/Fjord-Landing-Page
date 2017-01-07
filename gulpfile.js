@@ -6,9 +6,11 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync");
+var wait = require("gulp-wait");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
+    .pipe(wait(1500))
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([

@@ -1,0 +1,8 @@
+.features__title {
+	@include style-text($montserratLight, 18px, 26px, #232323);
+}
+
+.features__desc {
+	@include style-text($montserratLight, 14px, 22px, #232323);
+	opacity: .5;
+}

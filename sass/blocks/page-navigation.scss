@@ -1,9 +1,5 @@
 .page-navigation__item {
 	list-style: none;
-
-	&#{&}--bg {
-		background-color: rgba(0, 0, 0, .3);
-	}
 }
 
 .page-navigation__link {
@@ -13,9 +9,23 @@
 	font-weight: bold;
 
 	opacity: .5;
-	transition: opacity .3s;
+	@include transition(opacity .3s);
 
 	&:hover {
 		opacity: 1;
+	}
+
+	&#{&}--start-btn {
+		display: block;
+		background-color: #000000;
+		padding: 16px 18px;
+		color: #ffffff;
+		opacity: 1;
+		@include transition(background-color .3s);
+
+		&:hover {
+			background-color: #ffffff;
+			color: #000000;
+		}
 	}
 } 

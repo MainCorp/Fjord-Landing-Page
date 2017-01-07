@@ -1,0 +1,19 @@
+.capabilities__title {
+	@include style-text($montserratLight, 18px, 24px, #232323);
+}
+
+.capabilities__desc {
+	@include style-text($montserratLight, 14px, 22px, #232323);
+	opacity: .5;
+}
+
+.capabilities__btn {
+	padding: 25px;
+	border: 0;
+
+	@include style-text($montserratLight, 12px, 12px, #ffffff);
+	text-transform: uppercase;
+
+	outline: 0;
+	background-color: #000000;
+}

@@ -1,0 +1,4 @@
+.portfolio__title {
+	@include style-text($MontserratBlack, 26px, 80px, #000000);
+	text-transform: uppercase;
+}

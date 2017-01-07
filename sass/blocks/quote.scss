@@ -1,0 +1,8 @@
+.quote__desc {
+	@include style-text($montserratHairline, 42px, 42px, #232323);
+}
+
+.quote__author {
+	@include style-text($montserratLight, 12px, 12px, #000000);
+	text-transform: uppercase;
+}
