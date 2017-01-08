@@ -1,4 +1,12 @@
+.page-navigation__list {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0;
+}
+
 .page-navigation__item {
+	padding-left: 28px;
 	list-style: none;
 }
 
@@ -18,14 +26,14 @@
 	&#{&}--start-btn {
 		display: block;
 		background-color: #000000;
-		padding: 16px 18px;
+		padding: 15px 19px;
 		color: #ffffff;
 		opacity: 1;
 		@include transition(background-color .3s);
 
 		&:hover {
-			background-color: #ffffff;
-			color: #000000;
+			background-color: #f2f3f8;
+			color: #232323;
 		}
 	}
 } 

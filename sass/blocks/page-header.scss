@@ -1,0 +1,20 @@
+.page-header {
+	background-color: #f1f3f7;
+	padding-bottom: 100px;
+}
+
+.page-header__wrapper {
+	max-width: 1600px;
+	margin: 0 auto;
+	min-height: 790px;
+	background: url('../img/promo.jpg') no-repeat;
+}
+
+.page-header__inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding-top: 45px;
+}

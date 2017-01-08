@@ -10,7 +10,7 @@ var wait = require("gulp-wait");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
-    .pipe(wait(1500))
+    .pipe(wait(300))
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([

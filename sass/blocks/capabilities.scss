@@ -1,13 +1,54 @@
+.capabilities {
+	max-width: 385px;
+	margin: 115px 0;
+	padding-top: 40px;
+	background-color: #ffffff;
+}
+
+.capabilities__item {
+	max-width: 225px;
+	padding-left: 115px;
+	padding-right: 45px;
+	padding-bottom: 25px;
+	position: relative;
+
+	&::before {
+		content: "";
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		left: 30px; 
+		top: 0;
+	}
+
+	&#{&}--image-1::before {
+		background: url('../img/capabilities__item-1.png') no-repeat;
+	}
+
+	&#{&}--image-2::before {
+		background: url('../img/capabilities__item-2.png') no-repeat;
+	}
+
+	&#{&}--image-3::before {
+		background: url('../img/capabilities__item-3.png') no-repeat;
+	}
+}
+
 .capabilities__title {
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 18px;
 	@include style-text($montserratLight, 18px, 24px, #232323);
 }
 
 .capabilities__desc {
+	margin: 0;
 	@include style-text($montserratLight, 14px, 22px, #232323);
 	opacity: .5;
 }
 
 .capabilities__btn {
+	width: 100%;
 	padding: 25px;
 	border: 0;
 
