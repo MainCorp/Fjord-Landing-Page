@@ -1,3 +1,7 @@
+.change__block {
+	background-color: #000000;
+}
+
 .change__title {
 	@include style-text($montserratHairline, 72px, 72px, #ffffff);
 }

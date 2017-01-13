@@ -1,14 +1,24 @@
+.rule {
+	width: 225px;
+	padding: 110px 0;
+}
+
 .rule__title {
+	margin: 0; 
 	@include style-text($montserratLight, 16px, 22px, #232323);
 }
 
 .rule__desc {
+	min-height: 129px;
+	margin: 0;
+	padding: 25px 0;
 	@include style-text($montserratLight, 14px, 22px, #232323);
 	opacity: .5;
 }
 
 .rule__btn {
 	border: 0;
+	padding: 0;
 
 	@include style-text($montserratLight, 12px, 12px, #232323);
 	text-transform: uppercase;

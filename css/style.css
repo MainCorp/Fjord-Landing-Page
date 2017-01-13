@@ -97,6 +97,7 @@
     opacity: .5; }
 
 .capabilities {
+  z-index: 2;
   max-width: 385px;
   margin: 115px 0;
   padding-top: 40px;
@@ -149,6 +150,9 @@
   color: #ffffff;
   text-transform: uppercase;
   outline: 0;
+  background-color: #000000; }
+
+.change__block {
   background-color: #000000; }
 
 .change__title {
@@ -232,7 +236,41 @@
 .page-gallery {
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+  z-index: 1;
+  width: 918px;
+  height: 764px;
+  margin-top: 75px;
+  background: url("../img/page-gallery__photos.png") no-repeat; }
+
+.page-gallery__input {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  opacity: 0; }
+
+.page-gallery__controll-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 67px;
+  cursor: pointer;
+  transition: opacity .3s; }
+  .page-gallery__controll-item:hover {
+    opacity: .5; }
+  .page-gallery__controll-item.page-gallery__controll-item--next {
+    left: 619px;
+    top: 150px;
+    background: url("../img/page-gallery__next.png") no-repeat; }
+  .page-gallery__controll-item.page-gallery__controll-item--prev {
+    left: 168px;
+    top: 512px;
+    background: url("../img/page-gallery__prev.png") no-repeat; }
+
+.page-gallery__photos {
+  margin-top: 320px;
+  text-align: center; }
 
 .page-header {
   background-color: #f1f3f7;
@@ -281,7 +319,7 @@
     opacity: 1;
     transition: background-color 0.3s; }
     .page-navigation__link.page-navigation__link--start-btn:hover {
-      background-color: #f2f3f8;
+      background-color: transparent;
       color: #232323; }
 
 .platform__title {
@@ -367,13 +405,21 @@
   outline: 0;
   background: none; }
 
+.rule {
+  width: 225px;
+  padding: 110px 0; }
+
 .rule__title {
+  margin: 0;
   font-family: "Montserrat-Light";
   font-size: 16px;
   line-height: 22px;
   color: #232323; }
 
 .rule__desc {
+  min-height: 129px;
+  margin: 0;
+  padding: 25px 0;
   font-family: "Montserrat-Light";
   font-size: 14px;
   line-height: 22px;
@@ -382,6 +428,7 @@
 
 .rule__btn {
   border: 0;
+  padding: 0;
   font-family: "Montserrat-Light";
   font-size: 12px;
   line-height: 12px;
@@ -391,6 +438,14 @@
   outline: 0;
   background: none; }
 
+.rules {
+  background-color: #f5f6f8; }
+
+.rules__inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
 .site-link {
   font-family: "Montserrat-Light";
   font-size: 11px;
@@ -399,12 +454,17 @@
   opacity: .2; }
 
 .statement__title {
+  text-align: center;
   font-family: "Montserrat-Hairline";
   font-size: 72px;
   line-height: 72px;
   color: #232323; }
 
 .statement__desc {
+  padding: 0 246px;
+  padding-bottom: 105px;
+  margin: 0;
+  text-align: center;
   font-family: "Montserrat-Light";
   font-size: 18px;
   line-height: 26px;
