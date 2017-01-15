@@ -1,8 +1,69 @@
+.features {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-bottom: 31px;
+}
+
+.features__item {
+	position: relative;
+	max-width: 200px;
+	padding-left: 80px;
+	margin: 0 40px 63px 0;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 60px;
+		height: 60px;
+	}
+
+	&#{&}--dashboard {
+		&::before {
+			background: url('../img/features__item-1.png') no-repeat center;
+		}
+	}
+
+	&#{&}--discussions {
+		&::before {
+			background: url('../img/features__item-2.png') no-repeat center;
+		}
+	}
+
+	&#{&}--mobile {
+		&::before {
+			background: url('../img/features__item-3.png') no-repeat center;
+		}
+	}
+
+	&#{&}--customizable {
+		&::before {
+			background: url('../img/features__item-4.png') no-repeat center;
+		}
+	}
+
+	&#{&}--ecommerce {
+		&::before {
+			background: url('../img/features__item-5.png') no-repeat center;
+		}
+	}
+
+	&#{&}--statistics {
+		&::before {
+			background: url('../img/features__item-6.png') no-repeat center;
+		}
+	}
+}
+
 .features__title {
+	margin: 0 0 15px;
 	@include style-text($montserratLight, 18px, 26px, #232323);
 }
 
 .features__desc {
+	margin: 0;
 	@include style-text($montserratLight, 14px, 22px, #232323);
 	opacity: .5;
 }

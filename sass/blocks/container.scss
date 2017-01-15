@@ -2,13 +2,19 @@
 	width: 960px;
 	padding: 0 10px;
 	margin: 0 auto;
+	position: relative;
 
-	&#{&}--full-size {
+	&#{&}--min-size {
 		width: 1245px;
 		padding: 0;
 	}
 
-	&#{&}--HD {
+	&#{&}--mid-size {
+		width: 1369px;
+		padding: 0;
+	}
+
+	&#{&}--full-size {
 		width: 1600px;
 		padding: 0;
 	}

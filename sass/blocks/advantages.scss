@@ -27,7 +27,7 @@
 .advantages__image-block {
 	height: 60px;
 	width: 60px;
-	margin-bottom: 25px;
+	margin-bottom: 12px;
 }
 
 .advantages__image {
@@ -47,7 +47,7 @@
 
 .advantages__desc {
 	margin: 0;
-	padding-bottom: 26px;
+	padding-bottom: 22px;
 
 	@include style-text($montserratLight, 14px, 22px, #232323);
 	opacity: .5;

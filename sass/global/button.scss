@@ -1,0 +1,19 @@
+@mixin page-button {
+	padding: 21px 45px;
+	border: 0;
+	border-radius: 30px;
+
+	@include style-text($montserratLight, 12px, 12px, #000000);
+	text-transform: uppercase;
+	
+	background-color: #26e6e6;
+	outline: 0;
+
+	cursor: pointer;
+	opacity: .7;
+	transition: opacity .3s;
+
+	&:hover {
+		opacity: 1;
+	}
+}

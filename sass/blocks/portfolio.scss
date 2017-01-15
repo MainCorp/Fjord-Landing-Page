@@ -1,4 +1,90 @@
+.portfolio {
+	min-height: 1345px;
+	background-color: $bg-color;
+}
+
+.portfolio__item {
+	position: absolute;
+	display: block;
+	max-width: 100%;
+	height: auto;
+
+	&#{&}--first-image {
+		top: 44px;
+		left: 155px;
+		width: 304px;
+		height: 420px;
+		z-index: 100;
+	}
+
+	&#{&}--second-image {
+		top: 84px;
+		left: 583px;
+		width: 632px;
+		height: 420px;
+		z-index: 99;
+	}
+
+	&#{&}--third-image {
+		top: 548px;
+		left: 205px;
+		width: 960px;
+		height: 200px;
+		z-index: 98;
+	}
+
+	&#{&}--fourth-image {
+		top: 802px;
+		left: 175px;
+		width: 468px;
+		height: 420px;
+		z-index: 97;
+	}
+
+	&#{&}--five-image {
+		top: 822px;
+		left: 807px;
+		width: 468px;
+		height: 420px;
+		z-index: 96;
+	}
+}
+
 .portfolio__title {
+	margin: 0;
 	@include style-text($MontserratBlack, 26px, 80px, #000000);
+	text-align: center;
 	text-transform: uppercase;
+}
+
+.portfolio__show {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	background-color: rgba(0, 0, 0, .8);
+}
+
+.portfolio__btn {
+	align-self: center;
+	padding: 15px 17px;
+	border-radius: 5px;
+	@include style-text($montserratLight, 12px, 12px, #000000);
+	background-color: #26e6e6;
+	text-transform: uppercase;
+	text-decoration: none;
+	cursor: pointer;
+
+	opacity: .7;
+
+	@include transition(opacity .3s);
+
+	&:hover {
+		opacity: 1;
+	}
 }

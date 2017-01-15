@@ -1,8 +1,57 @@
+.quote {
+	background: $bg-color;
+	min-height: 450px;
+	position: relative;
+}
+
+.quote__inner {
+	display: flex;
+	position: absolute;
+	background: $bg-color;
+
+	cursor: grab;
+}
+
+.quote__item {
+	position: relative;
+	width: 521px;
+	margin-right: 25px;
+	padding: 82px 82px 98px;
+	background: #ffffff;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 40px;
+		left: 38px;
+		width: 23px;
+		height: 17px;
+		background: url('../img/quote__up.png') no-repeat;
+		opacity: .5;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 40px;
+		right: 38px;
+		width: 23px;
+		height: 17px;
+		background: url('../img/quote__up.png') no-repeat;
+		opacity: .5;
+		transform: rotate(-180deg);
+	}
+}
+
 .quote__desc {
+	margin: 0 0 25px 0;
 	@include style-text($montserratHairline, 42px, 42px, #232323);
+	text-align: center;
 }
 
 .quote__author {
+	text-align: center;
+	margin: 0;
 	@include style-text($montserratLight, 12px, 12px, #000000);
 	text-transform: uppercase;
 }

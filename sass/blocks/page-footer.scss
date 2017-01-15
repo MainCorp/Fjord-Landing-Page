@@ -1,4 +1,23 @@
+.page-footer {
+	background: url('../img/footer__bg.jpg') $bg-color center no-repeat;
+	margin: 0;
+}
+
 .page-footer__title {
+	position: relative;
+	margin: 0;
+	padding-bottom: 234px;
 	@include style-text($MontserratBlack, 90px, 120px, #000000);
 	text-transform: uppercase;
+	text-align: right;
+
+	&::before {
+		content: "";
+		position: absolute;
+		left: 445px;
+		top: 145px;
+		width: 510px;
+		height: 65px;
+		background: url('../img/noise.png') no-repeat;
+	}
 }

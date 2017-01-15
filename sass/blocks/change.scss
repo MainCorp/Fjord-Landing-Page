@@ -1,23 +1,84 @@
+.change {
+	background-color: $bg-color;
+	padding-bottom: 312px;
+}
+
 .change__block {
+	position: relative;
+	padding: 122px 699px 128px 125px;
 	background-color: #000000;
 }
 
 .change__title {
+	margin: 0;
+	padding-bottom: 60px;
 	@include style-text($montserratHairline, 72px, 72px, #ffffff);
 }
 
 .change__desc {
+	margin: 0;
+	padding-right: 131px;
+	padding-bottom: 156px;
 	@include style-text($montserratLight, 14px, 22px, #ffffff);
 	opacity: .5;
 }
 
 .change__btn {
-	padding: 21px 45px;
-	border: 0;
+	@include page-button();
+}
 
-	@include style-text($montserratLight, 12px, 12px, #000000);
-	text-transform: uppercase;
-	
-	background-color: #26e6e6;
-	outline: 0;
+.change__gallery {
+	position: absolute;
+	left: 710px;
+	top: 265px;
+	width: 868px;
+	height: 672px;
+	background: url('../img/change__ipad.png') no-repeat;
+}
+
+.change__gallery-photo {
+	position: absolute;
+	top: 0;
+
+	&#{&}--logo {
+		top: 263px;
+		left: 395px;
+		width: 155px;
+		height: 143px;
+	}
+}
+
+.change__gallery-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.change__gallery-label {
+	position: absolute;
+	top: 300px;
+	left: -113px;
+	display: block;
+	width: 62px;
+	height: 62px;
+	border: 3px solid #333333;
+	border-radius: 50%;
+	opacity: .5;
+	cursor: pointer;
+	@include transition(opacity .3s);
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: 23px;
+		left: 23px;
+		width: 17px;
+		height: 17px;
+		background: url('../img/point.png') no-repeat;
+	}
+
+	&:hover {
+		opacity: 1;
+	}
 }

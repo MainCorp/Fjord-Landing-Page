@@ -1,4 +1,22 @@
+.copyright {
+	margin-bottom: 60px;
+}
+
 .copyright__title {
+	margin: 0;
 	@include style-text($montserratLight, 11px, 40px, #ffffff);
+	text-transform: uppercase;
 	opacity: .2;
+}
+
+.copyright__image {
+	width: 116px;
+	height: 30px;
+
+	opacity: .2;
+	@include transition(opacity .3s);
+
+	&:hover {
+		opacity: 1;
+	}
 }

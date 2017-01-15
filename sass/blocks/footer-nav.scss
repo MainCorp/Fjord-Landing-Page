@@ -1,3 +1,18 @@
+.footer-nav__lists {
+	flex-basis: 445px;
+}
+
+.footer-nav__list {
+	padding: 0;
+	margin: 0;
+}
+
+.footer-nav__navigation {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
 .footer-nav__item {
 	list-style: none;
 }
@@ -6,4 +21,11 @@
 	@include style-text($montserratLight, 12px, 40px, #ffffff);
 	text-transform: uppercase;
 	text-decoration: none;
+
+	opacity: .7;
+	@include transition(opacity .3s);
+
+	&:hover {
+		opacity: 1;
+	}
 }

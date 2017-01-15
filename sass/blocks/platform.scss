@@ -1,8 +1,21 @@
+.platform {
+	background-color: $bg-color;
+}
+
+.platform__inner {
+	max-width: 820px;
+	margin: 0 auto;
+}
+
 .platform__title {
+	margin: 0 0 32px;
 	@include style-text($montserratLight, 12px, 12px, #000000);
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .platform__desc {
+	margin: 0 0 76px;
 	@include style-text($montserratLight, 18px, 26px, #232323);
+	text-align: center;
 }

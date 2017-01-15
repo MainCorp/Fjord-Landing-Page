@@ -1,16 +1,14 @@
 .capabilities {
 	z-index: 2;
 	max-width: 385px;
-	margin: 115px 0;
+	margin: 118px 63px 107px;
 	padding-top: 40px;
 	background-color: #ffffff;
 }
 
 .capabilities__item {
 	max-width: 225px;
-	padding-left: 115px;
-	padding-right: 45px;
-	padding-bottom: 25px;
+	padding: 0 45px 37px 115px;
 	position: relative;
 
 	&::before {
@@ -30,8 +28,11 @@
 		background: url('../img/capabilities__item-2.png') no-repeat;
 	}
 
-	&#{&}--image-3::before {
-		background: url('../img/capabilities__item-3.png') no-repeat;
+	&#{&}--image-3 {
+		padding-bottom: 55px;
+		&::before {
+			background: url('../img/capabilities__item-3.png') no-repeat;
+		}
 	}
 }
 
@@ -55,7 +56,12 @@
 
 	@include style-text($montserratLight, 12px, 12px, #ffffff);
 	text-transform: uppercase;
-
-	outline: 0;
 	background-color: #000000;
+	cursor: pointer;
+	@include transition(all .3s);
+
+	&:hover {
+		background-color: transparent;
+		color: #000;
+	}
 }

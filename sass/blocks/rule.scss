@@ -1,6 +1,6 @@
 .rule {
-	width: 225px;
-	padding: 110px 0;
+	width: 235px;
+	padding: 120px 0 98px;
 }
 
 .rule__title {
@@ -11,7 +11,7 @@
 .rule__desc {
 	min-height: 129px;
 	margin: 0;
-	padding: 25px 0;
+	padding: 20px 0;
 	@include style-text($montserratLight, 14px, 22px, #232323);
 	opacity: .5;
 }
@@ -24,6 +24,11 @@
 	text-transform: uppercase;
 	text-decoration: none;
 
-	outline: 0;
+	cursor: pointer;
+	@include transition(opacity .3s);
 	background: none;
+
+	&:hover {
+		opacity: .5;
+	}
 }

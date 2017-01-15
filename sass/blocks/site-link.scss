@@ -1,4 +1,10 @@
 .site-link {
 	@include style-text($montserratLight, 11px, 40px, #ffffff);
+	text-decoration: none;
 	opacity: .2;
+	@include transition(opacity .3s);
+
+	&:hover {
+		opacity: 1;
+	}
 }

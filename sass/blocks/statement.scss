@@ -1,11 +1,12 @@
 .statement__title {
+	margin: 0;
+	padding-top: 110px;
 	text-align: center;
 	@include style-text($montserratHairline, 72px, 72px, #232323);
 }
 
 .statement__desc {
-	padding: 0 246px;
-	padding-bottom: 105px;
+	padding: 50px 246px 90px;
 	margin: 0;
 	text-align: center;
 	@include style-text($montserratLight, 18px, 26px, #232323);
