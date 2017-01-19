@@ -32,6 +32,7 @@ html {
     padding: 0; }
 
 .advantages {
+  padding-top: 100px;
   background-color: #f1f3f7; }
 
 .advantages__item {
@@ -63,7 +64,7 @@ html {
   height: auto; }
 
 .advantages__title {
-  max-width: 190px;
+  max-width: 200px;
   margin: 0;
   margin-bottom: 25px;
   font-family: "Montserrat-Light";
@@ -73,6 +74,7 @@ html {
   text-transform: uppercase; }
 
 .advantages__desc {
+  max-width: 300px;
   margin: 0;
   padding-bottom: 22px;
   font-family: "Montserrat-Light";
@@ -439,8 +441,7 @@ html {
   text-align: center; }
 
 .page-header {
-  background-color: #f1f3f7;
-  padding-bottom: 100px; }
+  background-color: #f1f3f7; }
 
 .page-header__wrapper {
   max-width: 1600px;
@@ -449,17 +450,19 @@ html {
   background: url("../img/promo.jpg") no-repeat; }
 
 .page-header__inner {
+  position: fixed;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  z-index: 99999;
   padding-top: 45px; }
 
 .page-navigation__list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0; }
+  margin: 0;
+  margin-left: 270px; }
 
 .page-navigation__item {
   padding-left: 28px;
@@ -592,7 +595,7 @@ html {
 .promo__title {
   max-width: 420px;
   margin: 0;
-  padding-top: 190px;
+  padding-top: 275px;
   padding-bottom: 15px;
   font-family: "Montserrat-Hairline";
   font-size: 72px;

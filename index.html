@@ -10,7 +10,7 @@
 	</head>
 
 	<body>
-		<header class="page-header">
+		<header id="home" class="page-header">
 			<div class="page-header__wrapper">
 				<div class="container">
 					<div class="page-header__inner">
@@ -21,26 +21,26 @@
 						<nav class="page-navigation">
 							<ul class="page-navigation__list">
 								<li class="page-navigation__item">
-									<a class="page-navigation__link" href="#" title="Переход на Home якорь">Home</a>
+									<a class="page-navigation__link" href="#home" title="Переход на Home якорь">Home</a>
 								</li>
 								<li class="page-navigation__item">
-									<a class="page-navigation__link" href="#" title="Переход на Pages якорь">Pages</a>
+									<a class="page-navigation__link" href="#pages" title="Переход на Pages якорь">Pages</a>
 								</li>
 								<li class="page-navigation__item">
-									<a class="page-navigation__link" href="#" title="Переход на Elements якорь">Elements</a>
+									<a class="page-navigation__link" href="#elements" title="Переход на Elements якорь">Elements</a>
 								</li>
 								<li class="page-navigation__item">
-									<a class="page-navigation__link" href="#" title="Переход на Product якорь">Product</a>
+									<a class="page-navigation__link" href="#product" title="Переход на Product якорь">Product</a>
 								</li>
 								<li class="page-navigation__item">
-									<a class="page-navigation__link" href="#" title="Переход на Blog якорь">Blog</a>
+									<a class="page-navigation__link" href="#blog" title="Переход на Blog якорь">Blog</a>
 								</li>
 								<li class="page-navigation__item">
-									<a class="page-navigation__link" href="#" title="Переход на Work якорь">Work</a>
+									<a class="page-navigation__link" href="#work" title="Переход на Work якорь">Work</a>
 								</li>
 								<li class="page-navigation__item">
-									<a class="page-navigation__link  page-navigation__link--start-btn" href="#">Start a Project</a>
-								</li>
+									<a class="page-navigation__link  page-navigation__link--start-btn" href="#start">Start a Project</a>
+								</li> 
 							</ul>
 						</nav>
 					</div>
@@ -56,7 +56,7 @@
 		</header>
 
 		<main class="page-content">
-			<section class="advantages">
+			<section id="pages" class="advantages">
 				<h2 class="section-title">advantages</h2>
 
 				<div class="container">
@@ -98,7 +98,7 @@
 				<h2 class="section-title">offer</h2>
 
 				<div class="container  container--min-size">
-					<div class="offer__inner">
+					<div id="elements" class="offer__inner">
 						<article class="page-gallery">
 							<h2 class="section-title">page-gallery</h2>
 
@@ -144,7 +144,7 @@
 				</div>
 			</section>
 
-			<section class="rules">
+			<section id="blog" class="rules">
 				<h2 class="section-title">rules</h2>
 
 				<div class="container">
@@ -196,7 +196,7 @@
 				</div>
 			</section>
 
-			<section class="platform">
+			<section id="product" class="platform">
 				<div class="container">
 					<div class="platform__inner">
 						<h2 class="platform__title">Platform Features</h2>
@@ -262,7 +262,7 @@
 					</div>
 			</section>
 
-			<section class="portfolio">
+			<section id="work" class="portfolio">
 				<div class="container  container--mid-size">
 					<h2 class="portfolio__title">Do it by yourself</h2>
 
@@ -319,7 +319,7 @@
 				</div>
 			</div>
 
-			<section class="rate__wrapper">
+			<section id="start" class="rate__wrapper">
 				<h2 class="section-title">rate</h2>
 				
 				<div class="container">
@@ -365,19 +365,19 @@
 						<nav class="footer-nav__navigation">
 							<ul class="footer-nav__list  footer-nav__list--1">
 								<li class="footer-nav__item">
-									<a class="footer-nav__link" href="#" title="Pages">Pages</a>
+									<a class="footer-nav__link" href="#pages" title="Переход на Pages якорь">Pages</a>
 								</li>
 								<li class="footer-nav__item">
-									<a class="footer-nav__link" href="#" title="Elements">Elements</a>
+									<a class="footer-nav__link" href="#elements" title="Переход на Elements якорь">Elements</a>
 								</li>
 								<li class="footer-nav__item">
-									<a class="footer-nav__link" href="#" title="Product">Product</a>
+									<a class="footer-nav__link" href="#product" title="Переход на Product якорь">Product</a>
 								</li>
 								<li class="footer-nav__item">
-									<a class="footer-nav__link" href="#" title="Blog">Blog</a>
+									<a class="footer-nav__link" href="#blog" title="Переход на Blog якорь">Blog</a>
 								</li>
 								<li class="footer-nav__item">
-									<a class="footer-nav__link" href="#" title="Work">Work</a>
+									<a class="footer-nav__link" href="#work" title="Переход на Work якорь">Work</a>
 								</li>
 							</ul>
 
@@ -433,7 +433,8 @@
 				</section>
 			</div>
 		</footer>
-
+		
+		<script src="js/jquery-3.1.1.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

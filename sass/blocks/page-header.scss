@@ -1,6 +1,5 @@
 .page-header {
 	background-color: #f1f3f7;
-	padding-bottom: 100px;
 }
 
 .page-header__wrapper {
@@ -11,10 +10,11 @@
 }
 
 .page-header__inner {
+	position: fixed;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	align-items: center;
+	z-index: 99999;
 
 	padding-top: 45px;
 }
